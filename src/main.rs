@@ -10,8 +10,9 @@ fn hello_world() {
 }
 
 fn variable() {
-    let x = 5;
+    let mut x = 5;
     let s = "abc";
+    x = x * x;
     println!("{1}, {0}", s, x);
 }
 
