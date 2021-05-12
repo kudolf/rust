@@ -3,6 +3,7 @@ fn main() {
     hello_world();
     variable();
     tuple();
+    array();
 }
 
 // snake case
@@ -24,3 +25,8 @@ fn tuple() {
     println!("{:?}", tpl);
 }
 
+fn array() {
+    let ary = [1, 2];
+    println!("{0}", ary[0]);
+    println!("{:?}", ary);
+}
