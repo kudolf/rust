@@ -29,4 +29,7 @@ fn array() {
     let ary = [1, 2];
     println!("{0}", ary[0]);
     println!("{:?}", ary);
+
+    let ary2:[u32; 5] = [1, 2, 3, 4, 5];
+    println!("{:?}", ary2);
 }
