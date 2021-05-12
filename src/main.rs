@@ -4,6 +4,7 @@ fn main() {
     variable();
     tuple();
     array();
+    boolean();
 }
 
 // snake case
@@ -32,4 +33,9 @@ fn array() {
 
     let ary2:[u32; 5] = [1, 2, 3, 4, 5];
     println!("{:?}", ary2);
+}
+
+fn boolean() {
+    let b = true;
+    println!("true:{0}, false:{1}, [variable]b:{2}", true, false, b);
 }
