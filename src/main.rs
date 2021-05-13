@@ -1,3 +1,4 @@
+mod sub;
 
 fn main() {
     hello_world();
@@ -5,6 +6,7 @@ fn main() {
     tuple();
     array();
     boolean();
+    sub::sub();
 }
 
 // snake case
