@@ -24,6 +24,7 @@ pub fn slice_func()
     analyze_slice(&xs);
     let ys: [i32; 500] = [0; 500];
     analyze_slice(&ys);
+    analyze_slice(&ys[1 .. 4]);
 }
 
 fn analyze_slice(slice: &[i32])
