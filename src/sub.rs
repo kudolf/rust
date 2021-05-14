@@ -22,6 +22,8 @@ pub fn slice_func()
 {
     let xs: [i32; 5] = [1,2,3,4,5];
     analyze_slice(&xs);
+    let ys: [i32; 500] = [0; 500];
+    analyze_slice(&ys);
 }
 
 fn analyze_slice(slice: &[i32])
