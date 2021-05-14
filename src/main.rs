@@ -7,6 +7,7 @@ fn main() {
     array();
     boolean();
     sub::sub();
+    sub::struct_func();
 }
 
 // snake case
