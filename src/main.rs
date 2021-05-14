@@ -8,6 +8,7 @@ fn main() {
     boolean();
     sub::sub();
     sub::struct_func();
+    sub::slice_func();
 }
 
 // snake case
