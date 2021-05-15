@@ -24,7 +24,7 @@ pub fn slice_func()
     analyze_slice(&xs);
     let ys: [i32; 500] = [0; 500];
     analyze_slice(&ys);
-    analyze_slice(&ys[1 .. 4]);
+    analyze_slice(&xs[1 .. 4]);
 }
 
 fn analyze_slice(slice: &[i32])
@@ -32,3 +32,15 @@ fn analyze_slice(slice: &[i32])
     println!("{}", slice[0]);
     println!("{}", slice.len());
 }
+
+// Aliase
+type HitPoint = i64;
+pub fn hitpoint_func()
+{
+    let mut hp : HitPoint;
+    hp = 100;
+    println!("{}", hp);
+    hp = 99;
+    println!("{}", hp);
+}
+

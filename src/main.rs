@@ -9,6 +9,7 @@ fn main() {
     sub::sub();
     sub::struct_func();
     sub::slice_func();
+    sub::hitpoint_func();
 }
 
 // snake case
