@@ -12,6 +12,7 @@ fn main() {
     sub::hitpoint_func();
     sub::type_inference();
     ifelse();
+    loop_func();
 }
 
 // snake case
@@ -60,4 +61,17 @@ fn ifelse()
             3
         };
     println!("{:?}", b);
+}
+
+fn loop_func()
+{
+    let mut count = 0;
+    loop
+    {
+        count += 1;
+        if count > 5
+        {
+            break;
+        }
+    }
 }
