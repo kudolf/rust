@@ -11,6 +11,7 @@ fn main() {
     sub::slice_func();
     sub::hitpoint_func();
     sub::type_inference();
+    ifelse();
 }
 
 // snake case
@@ -44,4 +45,19 @@ fn array() {
 fn boolean() {
     let b = true;
     println!("true:{0}, false:{1}, [variable]b:{2}", true, false, b);
+}
+
+fn ifelse()
+{
+    let a = 10;
+    let b = 
+        if a > 10
+        {
+            1
+        } else if a < 10 {
+            2
+        } else {
+            3
+        };
+    println!("{:?}", b);
 }
