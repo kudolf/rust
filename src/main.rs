@@ -10,6 +10,7 @@ fn main() {
     sub::struct_func();
     sub::slice_func();
     sub::hitpoint_func();
+    sub::type_inference();
 }
 
 // snake case
