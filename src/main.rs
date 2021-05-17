@@ -14,6 +14,7 @@ fn main() {
     ifelse();
     loop_func();
     clone_string();
+    clone_int();
 }
 
 // snake case
@@ -81,5 +82,12 @@ fn clone_string()
 {
     let s1 = String::from("hello");
     let s2 = s1.clone();
-    println!("{:1}, {:2}",s1, s2);
+    println!("{:1}, {:2}", s1, s2);
+}
+
+fn clone_int()
+{
+    let i1 = 100;
+    let i2 = i1.clone();
+    println!("{:1}, {:2}", i1, i2);
 }
