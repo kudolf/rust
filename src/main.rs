@@ -13,6 +13,7 @@ fn main() {
     sub::type_inference();
     ifelse();
     loop_func();
+    clone_string();
 }
 
 // snake case
@@ -74,4 +75,11 @@ fn loop_func()
             break;
         }
     }
+}
+
+fn clone_string()
+{
+    let s1 = String::from("hello");
+    let s2 = s1.clone();
+    println!("{:1}, {:2}",s1, s2);
 }
