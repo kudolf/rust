@@ -15,6 +15,7 @@ fn main() {
     loop_func();
     clone_string();
     clone_int();
+    nest_and_label();
 }
 
 // snake case
@@ -90,4 +91,21 @@ fn clone_int()
     let i1 = 100;
     let i2 = i1.clone();
     println!("{:1}, {:2}", i1, i2);
+}
+
+fn nest_and_label()
+{
+    let mut i = 0;
+    'outer: loop
+    {
+        'inner: loop
+        {
+            i += 1;
+            if i > 5
+            {
+                println!("break {:1}", i);
+                break 'outer;
+            }
+        }
+    }
 }
