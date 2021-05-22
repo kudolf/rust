@@ -16,6 +16,8 @@ fn main() {
     clone_string();
     clone_int();
     nest_and_label();
+    game::network::func1();
+    game::battle::func1();
 }
 
 // snake case
@@ -106,6 +108,31 @@ fn nest_and_label()
                 println!("break {:1}", i);
                 break 'outer;
             }
+        }
+    }
+}
+
+/*
+crate
+└game
+ └network
+ └battle
+ */
+mod game
+{
+    pub mod network
+    {
+        pub fn func1()
+        {
+            println!("network::func1");
+        }
+    }
+
+    pub mod battle
+    {
+        pub fn func1()
+        {
+            println!("battle::func1");
         }
     }
 }
