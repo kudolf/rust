@@ -16,8 +16,10 @@ fn main() {
     clone_string();
     clone_int();
     nest_and_label();
-    game::network::func1();
-    game::battle::func1();
+    crate::game::network::func1(); // 絶対パス
+    crate::game::battle::func1();  // 絶対パス
+    game::network::func1(); // 相対パス
+    game::battle::func1();  // 相対パス
 }
 
 // snake case
