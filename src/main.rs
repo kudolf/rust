@@ -20,6 +20,8 @@ fn main() {
     crate::game::battle::func1();  // 絶対パス
     game::network::func1(); // 相対パス
     game::battle::func1();  // 相対パス
+    use crate::game::network as network;
+    network::func1();
 }
 
 // snake case
